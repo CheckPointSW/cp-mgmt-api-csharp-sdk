@@ -1,0 +1,144 @@
+/**
+ * This class provides arguments for ApiClient configuration.
+ * All the arguments are configured with their default values.
+ *
+ * As default the debug file wont be created, the checkFingerprint sets to True, and thr port sets to 443.
+ */
+
+class API_Args{
+
+    private const int defaultPort = 443;
+
+    //The debug file holds data of all the communication
+    // between this client and Check Point's Management Server.
+    private string debugFile = null
+    private string fingerprintFile =
+
+    private bool checkFingerprint = true;
+    private int port                 = defaultPort;
+
+    private bool isUserEnteredPort;
+    //If set to null the connection won't use proxy tunneling
+    private string proxySetting;
+
+
+    /**
+     * Gets the debugFile.
+     *
+     * @return The debug file name
+     */
+    public string getDebugFile() {
+
+        return debugFile;
+    }
+
+    /**
+     * Gets the fingerprint file.
+     * The fingerprint file is initialized to {@link ApiClient#DEFAULT_FINGERPRINT_FILE}.
+     *
+     * @return The Fingerprint file name
+     */
+    public string getFingerprintFile() {
+
+        return fingerprintFile;
+    }
+
+    /**
+     * Gets the CheckFingerprint
+     *
+     * @return The CheckFingerprint.
+     */
+    public bool isCheckFingerprint() {
+
+        return checkFingerprint;
+    }
+
+    /**
+     * Gets the port
+     *
+     * @return The port.
+     */
+    public int getPort() {
+        return port;
+    }
+
+    /**
+     * Sets the checkFingerprint.
+     *
+     * @param checkFingerprint If set to True validates the server's fingerprint
+     */
+    public void setCheckFingerprint(boolean checkFingerprint) {
+
+        this.checkFingerprint = checkFingerprint;
+    }
+
+    /**
+     * Get the proxySetting
+     *
+     * @return the proxySetting
+     */
+    public string getProxySetting(){
+        return proxySetting;
+    }
+
+    /**
+     * Sets the fingerprint file;
+     *
+     * @param fingerprintFile File name to storage the fingerprints
+     */
+    public void setFingerprintFile(String fingerprintFile) {
+
+        if(fingerprintFile!= null && !fingerprintFile.isEmpty()) {
+            this.fingerprintFile = fingerprintFile;
+        }
+    }
+
+    /**
+     * Sets the debug file.
+     *
+     * @param debugFile File name to storage the logs.
+     */
+    public void setDebugFile(String debugFile) {
+
+        if(debugFile!=null && !debugFile.isEmpty()){
+            this.debugFile = debugFile;
+        }
+    }
+
+
+    /**
+     * Sets the port.
+     * If input set to null the port will set to default port
+     *
+     * @param port New port.
+     */
+    public void setPort(Integer port) {
+
+        if (port == null){
+            this.port = defaultPort;
+            this.isUserEnteredPort = false;
+        }
+        else {
+            this.port = port.intValue();
+            this.isUserEnteredPort = true;
+        }
+    }
+
+    /**
+     * Gets the userAskedPort
+     *
+     * @return true if user entered a certain port
+     */
+    public bool isUserEnteredPort(){
+        return isUserEnteredPort;
+    }
+
+    /**
+     * Sets the proxy setting.
+     *
+     * @param proxySetting If set to null the connection won't use proxy tunneling
+     */
+    public void setProxySetting(String proxySetting){
+        this.proxySetting = proxySetting;
+    }
+}

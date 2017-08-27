@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MgmtApi", "MgmtApi\MgmtApi.csproj", "{2359662D-AFF2-46A0-929E-CD9539B1AEC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddHost", "AddHost\AddHost.csproj", "{9BE4397C-A14B-42B9-A4C6-5B2D1783C292}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindDisabledRules", "FindDisabledRules\FindDisabledRules.csproj", "{7BC3324D-05B9-45D3-8DAB-B1ABB4623405}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2359662D-AFF2-46A0-929E-CD9539B1AEC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2359662D-AFF2-46A0-929E-CD9539B1AEC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2359662D-AFF2-46A0-929E-CD9539B1AEC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2359662D-AFF2-46A0-929E-CD9539B1AEC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BE4397C-A14B-42B9-A4C6-5B2D1783C292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE4397C-A14B-42B9-A4C6-5B2D1783C292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE4397C-A14B-42B9-A4C6-5B2D1783C292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE4397C-A14B-42B9-A4C6-5B2D1783C292}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BC3324D-05B9-45D3-8DAB-B1ABB4623405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BC3324D-05B9-45D3-8DAB-B1ABB4623405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BC3324D-05B9-45D3-8DAB-B1ABB4623405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BC3324D-05B9-45D3-8DAB-B1ABB4623405}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
