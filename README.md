@@ -4,7 +4,9 @@ The kit contains the API library project, and sample projects demonstrating the 
 
 ## Content
 MgmtApi - the API library project.
+
 AddHost - demonstrates adding a new host object to the R80.10 Management database.
+
 FindDisabledRules - demonstrates how to find disabled rules in access layers of a given policy package.
 
 ## Development Environment
