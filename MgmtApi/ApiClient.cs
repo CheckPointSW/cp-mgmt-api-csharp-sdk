@@ -798,7 +798,7 @@ namespace MgmtApi
             int count = 0;
             foreach (var task in (JArray)taskResult.Data["tasks"])
             {
-                if (InProgress.Equals(((JObject)task)["status"].ToString()))
+                if (!InProgress.Equals(((JObject)task)["status"].ToString()))
                 {
                     count++;
                 }
